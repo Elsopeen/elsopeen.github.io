@@ -29,5 +29,5 @@ jobs:
       working-directory: door_project_MRE/
     - run: npm run build --if-present
       working-directory: door_project_MRE/
-    - run: npm start
+    - run: npm start-watch
       working-directory: door_project_MRE/
