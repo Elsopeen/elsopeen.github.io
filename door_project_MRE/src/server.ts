@@ -23,7 +23,8 @@ function runApp() {
 	// Start listening for connections, and serve static files.
 	const server = new MRE.WebHost({
 		baseDir: resolvePath(__dirname, '../public'),
-		baseUrl: "ws://elsopeen.github.io"
+		baseUrl: "ws://elsopeen.github.io",
+		port: 3901
 	});
 
 	// Handle new application sessions
