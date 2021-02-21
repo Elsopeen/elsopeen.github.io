@@ -22,7 +22,8 @@ dotenv.config();
 function runApp() {
 	// Start listening for connections, and serve static files.
 	const server = new MRE.WebHost({
-		baseDir: resolvePath(__dirname, '../public')
+		baseDir: resolvePath(__dirname, '../public'),
+		baseUrl: "ws://elsopeen.github.io"
 	});
 
 	// Handle new application sessions
