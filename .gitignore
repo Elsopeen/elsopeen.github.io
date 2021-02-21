@@ -1,0 +1,7 @@
+door_project_MRE/node_modules/*
+door_project_MRE/built/* 
+door_project_MRE/node_modules
+door_project_MRE/built
+door_project_MRE/.idea
+door_project_MRE/.idea/*
+
