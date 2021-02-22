@@ -20,12 +20,6 @@ jobs:
         node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     
-    services:
-      redis:
-        image: redis
-        ports:
-          - 3901:3901
-    
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -38,6 +32,3 @@ jobs:
       working-directory: door_project_MRE/
     - run: npm run start-watch
       working-directory: door_project_MRE/
-      env:
-        REDIS_HOST: redis
-        REDIS_PORT: 3901
